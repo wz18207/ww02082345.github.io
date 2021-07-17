@@ -100,7 +100,7 @@
                     {
                         name: "Unlock All Songs",
                         patches: [
-                            { offset: 0x429D49, off: [0x75, 0x24], on: [0x90, 0x90] },
+                            { offset: 0x429D49, off: [0x75, 0x2D], on: [0x90, 0x90] },
                         ],
                     },
                     {
@@ -251,7 +251,7 @@
                         name: "2P Premium Free",
                         patches: [
                             {
-                                offset: 0x6FE06B,
+                                offset: 0x6FE60B,
                                 off: [0x74, 0x55],
                                 on: [0x90, 0x90],
                             },
@@ -306,12 +306,6 @@
                         name: "Cursor Lock",
                         patches: [
                             { offset: 0x701CFF, off: [0x74, 0x1f], on: [0x90, 0x90] },
-                        ],
-                    },
-                    {
-                        name: "Quick Retry",
-                        patches: [
-                            { offset: 0x4A80BE, off: [0x32, 0xC0], on: [0xB0, 0x01] },
                         ],
                     },
                     {
