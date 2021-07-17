@@ -221,9 +221,9 @@
                         name: "Force LDJ software video decoder for all boot modes",
                         patches: [
                             {
-                                offset: 0x7BB077,
-                                off: [0x83, 0x78, 0x08, 0x02],
-                                on: [0x83, 0x78, 0x08, 0x05],
+                                offset: 0x7BB07A,
+                                off: [0x02],
+                                on: [0x05],
                             },
                         ],
                     },
@@ -251,11 +251,25 @@
                         name: "2P Premium Free",
                         patches: [
                             {
-                                offset: 0x6FE60B,
-                                off: [0x74, 0x55],
+                                offset: 0x6FA540,
+                                off: [0x74, 0x56],
                                 on: [0x90, 0x90],
                             },
-                            { offset: 0x6FD8D5, off: [0x74, 0x3F], on: [0x90, 0x90] },
+                            { offset: 0x6FA52A, off: [0x74, 0x6c], on: [0x90, 0x90] },
+
+                        ],
+                    },
+					{
+                        name: "2P Force ARENA",
+                        patches: [
+                            { offset: 0x6FA555, off: [0x75, 0x41], on: [0x90, 0x90] },
+
+                        ],
+                    },
+					{
+                        name: "Force BPL Battle",
+                        patches: [
+                            { offset: 0x6FA57A, off: [0x74, 0x1c], on: [0x90, 0x90] },
 
                         ],
                     },
@@ -268,7 +282,7 @@
                     {
                         name: "Unlock All Songs",
                         patches: [
-                            { offset: 0x4C6108, off: [0x75, 0x2D], on: [0x90, 0x90] },
+                            { offset: 0x4C6108, off: [0x75, 0x2d], on: [0x90, 0x90] },
                         ],
                     },
                     {
@@ -306,6 +320,12 @@
                         name: "Cursor Lock",
                         patches: [
                             { offset: 0x701CFF, off: [0x74, 0x1f], on: [0x90, 0x90] },
+                        ],
+                    },
+                    {
+                        name: "Quick Retry",
+                        patches: [
+                            { offset: 0x4A80BF, off: [0x32, 0xC0], on: [0xB0, 0x01] },
                         ],
                     },
                     {
